@@ -1,12 +1,24 @@
 # @cia-da-vacina/icon-system
 
-Ícones React do CRM Cia da Vacina (subset operacional: inbox, pipeline, usuários, unidades).
+Ícones SVG do CRM Cia da Vacina.
+
+## Uso
 
 ```tsx
 import { InboxIcon, BotIcon } from "@cia-da-vacina/icon-system";
 
-<InboxIcon size={20} fill="text.brand" />
-<BotIcon size={16} fill="mode.ai.text" />
+<InboxIcon size="lg" fill="text.brand" />
+<BotIcon size="md" fill="mode.ai.text" />
 ```
 
-Peer deps: `react`, `styled-components`, `@cia-da-vacina/styled-system`.
+## Tamanhos (`IconSizeToken`)
+
+| Token | px |
+|-------|----|
+| `xs`  | 12 |
+| `sm`  | 14 |
+| `md`  | 16 (default) |
+| `lg`  | 20 |
+| `xl`  | 24 |
+
+Não passe números crutos — o `styled-system` trata `size` numérico como token de layout.

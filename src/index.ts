@@ -1,5 +1,5 @@
-export { createIcon } from "./createIcon";
-export type { IconProps } from "./createIcon";
+export { createIcon, iconSizes } from "./createIcon";
+export type { IconProps, IconSizeToken } from "./createIcon";
 
 export {
   InboxIcon,
@@ -16,6 +16,7 @@ export {
   ChevronDownIcon,
   CheckIcon,
   XIcon,
+  MenuIcon,
   AlertIcon,
   BotIcon,
   HandshakeIcon,
