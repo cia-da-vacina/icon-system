@@ -6,7 +6,7 @@
     <title>Cia da Vacina · Icon System</title>
     <meta
       name="description"
-      content="Galeria do @cia-da-vacina/icon-system — ícones importados do Sencon (Untitled UI)"
+      content="Galeria do @cia-da-vacina/icon-system — ícones Untitled UI + custom Cia da Vacina"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -136,14 +136,14 @@
     <main>
       <h1>Icon System</h1>
       <p class="lead">
-        Pacote <code>@cia-da-vacina/icon-system</code>. Set Untitled UI importado
-        do Sencon Icon System + ícones custom da marca (Syringe, Bot,
-        Handshake). API <code>createIcon</code>, tamanhos
-        <code>xs|sm|md|lg|xl</code>.
+        Pacote <code>@cia-da-vacina/icon-system</code>. Set de ícones baseado em
+        <a href="https://www.untitledui.com/figma">Untitled UI</a>
+        + ícones custom da marca (Syringe, Bot, Handshake). API
+        <code>createIcon</code>, tamanhos <code>xs|sm|md|lg|xl</code>.
       </p>
       <div class="toolbar">
         <span class="chip" id="count">…</span>
-        <span class="chip">stroke 2 · Sencon / Untitled UI</span>
+        <span class="chip">stroke 2 · Untitled UI</span>
         <input
           id="q"
           type="search"
@@ -154,7 +154,9 @@
       <div class="grid" id="grid"></div>
       <p class="empty" id="empty" hidden>Nenhum ícone com esse nome.</p>
       <footer>
-        Fonte: SenconIconSystem ·
+        Base:
+        <a href="https://www.untitledui.com/figma">Untitled UI</a>
+        ·
         <a href="https://github.com/cia-da-vacina/icon-system"
           >github.com/cia-da-vacina/icon-system</a
         >
@@ -168,7 +170,7 @@
       const q = document.getElementById("q");
       const icons = window.CIA_ICONS || [];
 
-      // Custom brand icons (not in Sencon dump)
+      // Custom brand icons (not in the Untitled UI set)
       icons.push(
         {
           name: "SyringeIcon",
